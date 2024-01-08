@@ -163,7 +163,7 @@ We are almost there to run our graphics C program.
  - Simply press "<strong>Ctrl+Shift+B</strong>" to compile our C code.
  - Run our exe file from bin folder.
 
- ![screenshot configuring vs code](img/.png)
+ ![screenshot configuring vs code](img/running.png)
 
 AND WE ARE DONE, FINALLY !!! 🥳
 
