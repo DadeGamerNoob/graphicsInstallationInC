@@ -31,7 +31,7 @@
 
 ### Installations
 
-- when you download all files it will be like this in your <strong>default</strong> Downloads folder (for me, it's regular ol' downloads folder)
+- when you download all files it will be like this in your <strong>default</strong> Downloads folder (minus the assignment and index docs file 😅) (for me, it's regular ol' downloads folder)
 
   ![screenshot showing downloads folder](img/downloadLocation.png)
 
