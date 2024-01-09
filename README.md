@@ -174,6 +174,9 @@ As to how I ran the exe in vs code terminal, pls check our friendly neighbourhoo
  - if it results in other errors, Internet is your friend
  - LASTLY, check the documentations of both [SDL](https://www.libsdl.org/) and [SDL_bgi](https://sdl-bgi.sourceforge.io/) libraries for more info on how these works.
 
+### Note
+- "if you release your compiled program, you must also provide <strong>SDL2.dll</strong> and <strong>SDL_bgi.dll</strong> in the same directory." - [source](https://sdl-bgi.sourceforge.io/howto_CodeBlocks.html) from official site, just in case if the file doesn't run
+
 ### Important !!!
 
 - Make sure to include "<strong>graphics.h</strong>" header in your C program
