@@ -181,10 +181,13 @@ As to how I ran the exe in vs code terminal, pls check our friendly neighbourhoo
 
 - Make sure to include "<strong>graphics.h</strong>" header in your C program
 
-- Make sure that your <strong>main()</strong> function has following parameters:<br>
+- Make sure that your <strong>main()</strong> function has following parameters:
+
+  ```
   int main(int argc, char *argv[]){
     /* Code Segments */
   }
+  ```
   
 ![screenshot configuring vs code](img/important.png)
     - if not it will conflict with main() function included in SDL librairies. Check there documentation for more, AGAIN !!!
