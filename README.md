@@ -191,7 +191,7 @@ As to how I ran the exe in vs code terminal, pls check our friendly neighbourhoo
   
 ![screenshot configuring vs code](img/important.png)
 
-- if not it will conflict with main() function included in SDL librairies. Check there documentation for more, AGAIN !!!
+- if not it will conflict with main() function included in SDL librairies. Check there documentation for more, [AGAIN](https://wiki.libsdl.org/SDL2/FrontPage) !!!
 
 ### Why do all these instead of using graphics.h header file ?
 
