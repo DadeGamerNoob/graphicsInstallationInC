@@ -1,4 +1,4 @@
-# Modern Graphics Library (with SDL) Installation Guide on C on Windows
+# Modern Graphics Library (with SDL) Installation Guide on C for Windows
 
 ## Steps
 
