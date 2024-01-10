@@ -181,7 +181,7 @@ As to how I ran the exe in vs code terminal, pls check our friendly neighbourhoo
 
 - Make sure to include "<strong>graphics.h</strong>" header in your C program
 
-- Make sure that your <strong>main()</strong> function has following parameters:
+- Make sure that your <strong>main()</strong> function has following parameters:<br>
   int main(int argc, char *argv[]){
     /* Code Segments */
   }
