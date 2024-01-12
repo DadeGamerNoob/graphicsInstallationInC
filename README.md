@@ -178,6 +178,8 @@ As to how I ran the exe in vs code terminal, pls check our friendly neighbourhoo
 - since we are using external dll namely SDL2.dll and SDL_bgi.dll, its just best to simply copy it in our exe folder everytime, unless there's a method to automatically do so in VS Code. If I find it, I will update it later
 - both of these can be found inside **"C: => mingw64 => bin"**
 
+- want to know what dll is ? Ans: Internet my friend
+
 ### Important !!!
 
 - Make sure to include "**graphics.h**" header in your C program
