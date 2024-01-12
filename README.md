@@ -65,9 +65,7 @@
 
   ![screenshot showing extracted graphics.h in mingw](img/copyGraphics.png)
 
-If you followed these instructions, <span style="  background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;">Congrats</span> 👏! All necessary files have been properly installed. But, we still need to configure it so that the compiler knows which libraries are where and link it.
+If you followed these instructions, **Congrats** 👏! All necessary files have been properly installed. But, we still need to configure it so that the compiler knows which libraries are where and link it.
 
 ### Configuration
 
