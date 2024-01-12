@@ -15,7 +15,7 @@
 
   ![screenshot showing SDL download](img/downloadSDL.png)
 
-  - it will direct you to their github page, download <strong>SDL2-devel-2.28.5-mingw.zip</strong> (since we are using windows with mingw compiler) 
+  - it will direct you to their github page, download **SDL2-devel-2.28.5-mingw.zip** (since we are using windows with mingw compiler) 
 
   ![screenshot showing SDL download in github](img/downloadSDL_Github.png)
 
@@ -31,37 +31,37 @@
 
 ### Installations
 
-- when you download all files it will be like this in your <strong>default</strong> Downloads folder (minus the assignment and index docs file 😅) (for me, it's regular ol' downloads folder)
+- when you download all files it will be like this in your **default** Downloads folder (minus the assignment and index docs file 😅) (for me, it's regular ol' downloads folder)
 
   ![screenshot showing downloads folder](img/downloadLocation.png)
 
-- extract <strong>mingw64</strong> from file named: <strong>winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.5-mingw-w64ucrt-11.0.1-r3.zip</strong>
+- extract **mingw64** from file named: **winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.5-mingw-w64ucrt-11.0.1-r3.zip**
 
-  - (I am using <strong>Nanazip</strong> to extract file. You can freely use your own preferred file manager of your choice 😊)
+  - (I am using **Nanazip** to extract file. You can freely use your own preferred file manager of your choice 😊)
 
   ![screenshot showing mingw extractiong](img/extractMingw.png)
 
 
-  - extract preferably on location such as "<strong>C:\mingw</strong>"
+  - extract preferably on location such as "**C:\mingw**"
 
   ![screenshot showing mingw location](img/mingwLocation.png)
 
-  - in my case it's inside "<strong>Compilers</strong>" folder inside of "<strong>C:</strong>" drive, so it is "<strong>C:\Compilers\mingw64</strong>"
+  - in my case it's inside "**Compilers**" folder inside of "**C:**" drive, so it is "**C:\Compilers\mingw64**"
 
-- extract <strong>all</strong> folders from inside of <strong>SDL2-devel-2.28.5-mingw.zip => SLD2-2.28.5 => x86_64-w64-mingw32</strong> folders to <strong>C: => mingw64</strong>
+- extract **all** folders from inside of **SDL2-devel-2.28.5-mingw.zip => SLD2-2.28.5 => x86_64-w64-mingw32** folders to **C: => mingw64**
 
   ![screenshot showing extracted contents on mingw](img/extractSDL.png)
-  - this should copy SDL files inside <strong>mingw64</strong> folder or wherever you extracted that folder to
+  - this should copy SDL files inside **mingw64** folder or wherever you extracted that folder to
 
-- extract "<strong>SDL_bgi.dll</strong>" file  inside of <strong>SDL_bgi-3.0.0 => bin => Mingw64</strong> to <strong>C: => ming64 => bin</strong> directory or inside <strong>bin</strong> folder of wherever you extracted <strong>ming64</strong> to
+- extract "**SDL_bgi.dll**" file  inside of **SDL_bgi-3.0.0 => bin => Mingw64** to **C: => ming64 => bin** directory or inside **bin** folder of wherever you extracted **ming64** to
 
   ![screenshot showing extracted sdl_bgi in mingw](img/extractSDL_bgi.png)
 
-- extract/copy "SDL_bgi.h" file from inside of "<strong>SDL_bgi-3.0.0 => src</strong>" to "<strong>C: => mingw64 => include => SDL2</strong>"
+- extract/copy "SDL_bgi.h" file from inside of "**SDL_bgi-3.0.0 => src**" to "**C: => mingw64 => include => SDL2**"
 
   ![screenshot showing extracted SDL_bgi.h in mingw](img/copySDL_bgiH.png)
 
-- similarly, copy "<strong>graphics.h</strong>" from same folder (SDL_bgi-3.0.0\src) to now in include folder (mingw64/include)
+- similarly, copy "**graphics.h**" from same folder (SDL_bgi-3.0.0\src) to now in include folder (mingw64/include)
 
   ![screenshot showing extracted graphics.h in mingw](img/copyGraphics.png)
 
@@ -76,18 +76,18 @@ For this I am using VS Code (-- which is the best text editor - for me atleast, 
 #### In Windows
 
 - First, lets direct windows to know the location of ming64 compiler
-- search for "<strong>Edit System Environment</strong>"
+- search for "**Edit System Environment**"
 
 ![screenshot showling edit environment](img/editSystemEnvironment1.png)
 
 - click on it, it will give uac (user account control) promt, click on "Yes"
-- click "<strong>Environment Variables</strong>"
+- click "**Environment Variables**"
   
   ![screenshot showling edit environment](img/editSystemEnvironment2.png)
 
-- "Environment Variables" window should pop up, double click 👆👆 on "path" to open another window "<strong>Edit environment variable</strong>"
+- "Environment Variables" window should pop up, double click 👆👆 on "path" to open another window "**Edit environment variable**"
 - click on "New" or on blank space
-- simply copy the "<strong>bin</strong>" path from where you have extracted ming64 to. For me it will be "C:\Compilers\mingw64\bin". For you it may be smth like "<strong>C:\ming64\bin</strong>" and paste it in that blank space !!!
+- simply copy the "**bin**" path from where you have extracted ming64 to. For me it will be "C:\Compilers\mingw64\bin". For you it may be smth like "**C:\ming64\bin**" and paste it in that blank space !!!
 
 ![screenshot showling edit environment](img/editSystemEnvironment3.png)
 ![screenshot showling edit environment](img/editSystemEnvironment4.png)
@@ -105,23 +105,23 @@ Now let's configure vs code to link SDL and SDL_bgi headers and libraries
 
 - now install this extension: [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) (for intellisense and others)
 
-- then, press "<strong>Ctrl+Shift+P</strong>" to open search box and type "<strong>C/C++</strong>", click on "<strong>C/C++: Edit Configurations(UI)</strong>" not the one with <strong>(JSON)</strong>
+- then, press "**Ctrl+Shift+P**" to open search box and type "**C/C++**", click on "**C/C++: Edit Configurations(UI)**" not the one with **(JSON)**
 
 ![screenshot configuring vs code](img/configureVsCode1.png)
 
-- "<strong>Compiler Path</strong>" should be directed automatically at gcc.exe for C codes
+- "**Compiler Path**" should be directed automatically at gcc.exe for C codes
 
 ![screenshot configuring vs code](img/configureVsCode2.png)
 
-- "<strong>C standard</strong>" should also be automatically set at "<strong>c17</strong>" and leave "<strong>C++ standard</strong>" as it is, since we won't be using c++ for this (or change it to "<strong>c++20</strong>") - this is just to use latest compatible C/C++ code standards
+- "**C standard**" should also be automatically set at "**c17**" and leave "**C++ standard**" as it is, since we won't be using c++ for this (or change it to "**c++20**") - this is just to use latest compatible C/C++ code standards
 
 ![screenshot configuring vs code](img/configureVsCode3.png)
 
-A new folder is automatically created in main folder named "<strong>.vscode</strong>". We will use this folder to use as a template for OTHER graphics C programs without having to set up vs code again and again !!!
+A new folder is automatically created in main folder named "**.vscode**". We will use this folder to use as a template for OTHER graphics C programs without having to set up vs code again and again !!!
 
 ![screenshot configuring vs code](img/configureVsCode4.png)
 
-- now click/hover over "<strong>Terminal</strong>" then click on "<strong>Configure Tasks...</strong>" (in my case due to screen size being smaller, that menu was hidden behind dots)
+- now click/hover over "**Terminal**" then click on "**Configure Tasks...**" (in my case due to screen size being smaller, that menu was hidden behind dots)
 
 ![screenshot configuring vs code](img/configureVsCode5.png)
     
@@ -132,7 +132,7 @@ A new folder is automatically created in main folder named "<strong>.vscode</str
 
 - if you want to use another compiler for eg, Clang, simply follow previous steps and click on Clang
 
-- next, inside "tasks.json" add these lines inside "<strong>args</strong>":
+- next, inside "tasks.json" add these lines inside "**args**":
 
   - "-std=c17",
   - "-lmingw32",
@@ -160,7 +160,7 @@ to:
 ### Compiling C graphics code in VS Code
 
 We are almost there to run our graphics C program.
- - Simply press "<strong>Ctrl+Shift+B</strong>" to compile our C code.
+ - Simply press "**Ctrl+Shift+B**" to compile our C code.
  - Run our exe file from bin folder.
 
  ![screenshot configuring vs code](img/running.png)
@@ -169,19 +169,19 @@ AND WE ARE DONE, FINALLY !!! 🥳
 
 As to how I ran the exe in vs code terminal, pls check our friendly neighbourhood ~~Spiderman~~ INTERNET to learn USEFULL shortcuts
 
- - if it results in error like "output file not found smth..." remove or add one dot from the previously modified fileDir line, this is mostly due to path error for that "<strong>bin</strong>" folder
+ - if it results in error like "output file not found smth..." remove or add one dot from the previously modified fileDir line, this is mostly due to path error for that "**bin**" folder
  - if it results in smth header not found, you probably didn't extract the header files in proper location. make sure to properly copy it in said locations
  - if it results in other errors, Internet is your friend
  - LASTLY, check the documentations of both [SDL](https://www.libsdl.org/) and [SDL_bgi](https://sdl-bgi.sourceforge.io/) libraries for more info on how these works.
 
 ### Note
-- "if you release your compiled program, you must also provide <strong>SDL2.dll</strong> and <strong>SDL_bgi.dll</strong> in the same directory." - [source](https://sdl-bgi.sourceforge.io/howto_CodeBlocks.html) from official site, just in case if the file doesn't run
+- "if you release your compiled program, you must also provide **SDL2.dll** and **SDL_bgi.dll** in the same directory." - [source](https://sdl-bgi.sourceforge.io/howto_CodeBlocks.html) from official site, just in case if the file doesn't run
 
 ### Important !!!
 
-- Make sure to include "<strong>graphics.h</strong>" header in your C program
+- Make sure to include "**graphics.h**" header in your C program
 
-- Make sure that your <strong>main()</strong> function has following parameters: <strong>(int argc, char *argv[])</strong>
+- Make sure that your **main()** function has following parameters: **(int argc, char *argv[])**
 
   ```
   int main(int argc, char *argv[]){
