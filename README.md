@@ -174,6 +174,9 @@ As to how I ran the exe in vs code terminal, pls check our friendly neighbourhoo
 
 ### Note
 - "if you release your compiled program, you must also provide **SDL2.dll** and **SDL_bgi.dll** in the same directory." - [source](https://sdl-bgi.sourceforge.io/howto_CodeBlocks.html) from official site, just in case if the file doesn't run
+- this is likely because our .exe file is dependent on .dll files and first priority take to search for said dll files is the location of our exe and then to windows. [source](https://stackoverflow.com/questions/64396979/how-do-i-use-sdl2-in-my-programs-correctly)
+- since we are using external dll namely SDL2.dll and SDL_bgi.dll, its just best to simply copy it in our exe folder everytime, unless there's a method to automatically do so in VS Code. If I find it, I will update it later
+- both of these can be found inside **"C: => mingw64 => bin"**
 
 ### Important !!!
 
