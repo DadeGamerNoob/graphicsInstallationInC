@@ -206,3 +206,5 @@ As to how I ran the exe in vs code terminal, pls check our friendly neighbourhoo
 - Well for college lessons, not more not less. It introduces us to computer graphics in C atleast.
 
 HAPPY CODING !!!
+
+Also, check my "How to configure modern graphics in C for Linux/WSL", [here](https://github.com/DadeGamerNoob/graphicsInstallationInLinuxForC)!!!
