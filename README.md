@@ -132,13 +132,13 @@ A new folder is automatically created in main folder named "**.vscode**". We wil
 
 - next, inside "tasks.json" add these lines inside "**args**":
 ```json
-  - "-std=c17",
-  - "-lmingw32",
-  - "-LC:/mingw64/bin", //linker file path
-  - "-lSDL_bgi", //SDL_bgi linker
-  - "-lSDL2main", //SDL2 linker
-  - "-lSDL2", //SDL2 linker
-  - // "-mwindows" //uncomment in case console input isn't required and only mouse input is used
+  "-std=c17",
+  "-lmingw32",
+  "-LC:/mingw64/bin", //linker file path
+  "-lSDL_bgi", //SDL_bgi linker
+  "-lSDL2main", //SDL2 linker
+  "-lSDL2", //SDL2 linker
+  // "-mwindows" //uncomment in case console input isn't required and only mouse input is used
 ```
 
 Don't forget to add commas
