@@ -131,7 +131,7 @@ A new folder is automatically created in main folder named "**.vscode**". We wil
 - if you want to use another compiler for eg, Clang, simply follow previous steps and click on Clang
 
 - next, inside "tasks.json" add these lines inside "**args**":
-
+```json
   - "-std=c17",
   - "-lmingw32",
   - "-LC:/mingw64/bin", //linker file path
@@ -139,6 +139,7 @@ A new folder is automatically created in main folder named "**.vscode**". We wil
   - "-lSDL2main", //SDL2 linker
   - "-lSDL2", //SDL2 linker
   - // "-mwindows" //uncomment in case console input isn't required and only mouse input is used
+```
 
 Don't forget to add commas
   - the "-std=c17" is for using c17 C code standards
@@ -186,7 +187,7 @@ As to how I ran the exe in vs code terminal, pls check our friendly neighbourhoo
 
 - Make sure that your **main()** function has following parameters: **(int argc, char *argv[])**
 
-  ```
+  ```c
   int main(int argc, char *argv[]){
     /* Code Segments */
   }
